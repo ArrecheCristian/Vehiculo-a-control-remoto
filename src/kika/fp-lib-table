@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name footprint)(type KiCad)(uri "$(KIPRJMOD)/footprint.pretty")(options "")(descr ""))
+  (lib (name lib)(type KiCad)(uri ${KIPRJMOD}/lib.pretty)(options "")(descr ""))
+  (lib (name kika)(type KiCad)(uri D:/Cristian/facultad_repositorios/Taller_de_proyecto_1/src/kika.pretty)(options "")(descr ""))
+)

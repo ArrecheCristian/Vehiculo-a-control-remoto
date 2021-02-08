@@ -1,0 +1,71 @@
+\chapter{Requerimientos}
+
+\vspace{12pt}
+Aquellos requerimientos indicados con \textbf{OPT} son completamente opcionales.
+
+\section{Requerimientos Funcionales}
+
+\subsection{Requerimientos de Software}
+
+\subsubsection{Control de Motores}
+
+\begin{enumerate}
+	\item El sistema debe accionar 4 motores individualmente, permitiendo girar en ambas direcciones
+	\item El sistema debe accionar motores en conjunto, permitiendo avanzar, retroceder y girar
+	\item El sistema debe permitir el bloqueo de movimiento en una dirección (por ejemplo debido a un obstáculo detectado por el sensor de proximidad)
+	\item \textbf{OPT} El sistema debe indicar mediante una serie de LEDs el estado de movimiento del vehículo
+\end{enumerate}
+
+\subsubsection{Control Remoto}
+
+\begin{enumerate}
+	\item El sistema debe  establecer una conexión bluetooth con el sistema de control remoto
+	\item El sistema debe leer las indicaciones del control remoto y ejecutar las acciones correspondientes
+	\item El sistema debe indicar mediante un LED el estado de la conexión bluetooth
+\end{enumerate}
+
+\subsubsection{\textbf{OPT} Medición Sensores }
+
+\begin{enumerate}
+	\item Ante ausencia de luz externa, se deben encender las luces del vehículo
+	\item Ante la presencia de obstáculos, se debe frenar el desplazamiento en esa dirección
+	
+\end{enumerate}
+
+\subsection{Requerimientos de Hardware}
+
+\subsubsection{Control de Motores}
+
+\begin{enumerate}
+	\item El vehículo debe utilizar puentes H para motores de corriente continua
+	\item \textbf{OPT} El vehículo debe Indicar con un LED para cada motor si este está en movimiento
+\end{enumerate}
+
+\subsubsection{Baterías y cargador}
+
+\begin{enumerate}
+	\item El vehículo debe utilizar baterías de Litio para lograr la autonomía del vehículo
+	\item El vehículo debe indicar mediante un LED cuando haya baja tensión
+	\item El vehículo debe permitir cargar las baterías mediante un puerto USB
+\end{enumerate}
+
+\subsubsection{Componentes}
+
+\begin{enumerate}
+	\item Se debe contar con una llave de encendido/apagado y un LED que determine su estado
+	\item \textbf{OPT} El sistema debe poseer un buzzer para indicar eventos o fallas
+\end{enumerate}
+
+\section{Requerimientos No Funcionales}
+
+\begin{itemize}
+	\item Utilización de la placa de desarrollo EDU-CIAA
+	\item Estructura sólida y liviana, donde se colocan los motores y la EDU-CIAA
+	\item El conexionado a los motores debe ser a través de borneras para poder cambiar la estructura.
+	\item Programación en lenguaje C
+	\item Desarrollo de PCB en formato de poncho
+	\item Mecanismo de control simple
+	\item El sistema debe manejar respuestas en tiempo real.
+	\item Fecha de finalización y entrega del proyecto el día 16/12
+	
+\end{itemize}

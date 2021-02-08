@@ -1,0 +1,101 @@
+\documentclass[12pt, spanish]{report}
+
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{translator}
+\usepackage{titlesec}
+\usepackage{pgfgantt}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{fancyvrb}
+\usepackage[normalem]{ulem}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{pdflscape}
+
+\titleformat{\chapter}[block]
+{\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+\titlespacing*{\chapter}{0pt}{-19pt}{0pt}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\lstset{
+	language=C,
+	texcl=true,
+	breaklines=true,
+	basicstyle=\footnotesize\ttfamily
+}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\title{
+			\Huge Vehículo a Control Remoto\\ Informe de Avance\\
+			\vspace{20pt}
+			\Large{Taller de Proyecto I $|$ Ingeniería en Computación}
+		}
+		
+		\author{
+			\vspace{20pt}\\
+			Arreche, Cristian\\
+			Blasco, Federico\\
+			Borini, Ángel\\
+			Paradiso, Martín
+		}
+		
+		\date{\today}
+		
+		\begin{figure}[b]
+		\centering
+		\Large{Facultad de Ingeniería}\\
+		\vspace{2pt}
+		\Large{Universidad Nacional de La Plata}\\
+		\vspace{10pt}
+		\includegraphics[width=0.2\linewidth]{logo_unlp.jpg}
+
+		\end{figure}
+	
+	\maketitle
+	\end{titlepage}
+	\thispagestyle{empty}
+	
+	\tableofcontents
+	
+	% 1
+	\include{informe_1/introduccion}
+	
+	% 2
+	\include{informe_1/objetivos}
+	
+	% 3
+	\include{informe_1/requisitos}
+	
+	% 4
+	\include{informe_2/hardware}
+	
+	% 5
+	\include{informe_2/software}
+	
+	% 6
+	\include{informe_4/ensayos}
+	
+	% 7
+	\include{informe_4/conclusiones}
+	
+	% 8
+	\include{informe_1/bibliografia}
+	
+	% 9
+	\include{informe_3/anexo}
+	\include{informe_1/cronograma}
+	\include{informe_1/division}
+	\include{informe_4/manual}
+	
+	% 10
+	\include{informe_4/fotos}
+\end{document}
